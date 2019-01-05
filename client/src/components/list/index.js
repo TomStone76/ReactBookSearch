@@ -8,6 +8,11 @@ export function List({ children }) {
     );
 }
 
-export function ListItem({ children }) {
-    return <li classname="list-group-item">{children}</li>
+export default function ListItem(props) {
+    return (
+        <div>
+            <li classname="list-group-item">{props.children}</li>
+            <button {...props} onClick={props.save}>Save</button>
+        </div>
+    )
 }
