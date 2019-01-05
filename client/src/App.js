@@ -28,7 +28,22 @@ class App extends Component {
         <Nav />
         <Form addBooks = {this.addBooks}/>
         {this.state.books.map(
-          (book, index) => <List save={() => this.saveBook(index)} key={index}>{book.volumeInfo.title}</List>
+          (book, index) => 
+          <List save={() => this.saveBook(index)} key={index}>
+          <br></br>
+          <br></br>
+          {book.volumeInfo.title}
+          {", by " + book.volumeInfo.authors}
+          <br></br>
+          <br></br>
+          {"DESCRIPTION: " + book.volumeInfo.description}
+          <br></br>
+          <br></br>
+          {"IMAGE: " + book.volumeInfo.imageLinks}
+          <br></br>
+          <br></br>
+          <a href={book.volumeInfo.infoLink}>Info Link</a>
+          </List>
         )}
       </div>
     );

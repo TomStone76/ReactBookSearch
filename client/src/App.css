@@ -22,3 +22,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+li {
+  margin-left: 10px;
+  list-style-type: none;
+}
+
+button {
+  margin-left: 10px;
+}
