@@ -1,5 +1,5 @@
 import React from "react";
-import {  Input, TextArea, FormBtn } from "./index.js";
+import {  Input, FormBtn } from "./index.js";
 import axios from "axios";
 
 class Form extends React.Component {
@@ -34,7 +34,6 @@ class Form extends React.Component {
                 name="searchString" 
                 value={this.state.searchString} 
             />
-            <TextArea />
             <FormBtn 
                 onClick={this.searchBooks}
             />
