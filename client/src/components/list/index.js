@@ -12,7 +12,7 @@ export default function ListItem(props) {
     return (
         <div>
             <li classname="list-group-item">{props.children}</li>
-            <button {...props} onClick={props.save}>Save</button>
+            <button  onClick={props.save}>Save</button>
         </div>
     )
 }

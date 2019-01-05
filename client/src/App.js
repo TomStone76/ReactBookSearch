@@ -17,8 +17,8 @@ class App extends Component {
     })
     console.log(this.state.books)
   }
-  saveBook = event => {
-    console.log(event.target);
+  saveBook = id => {
+    console.log(id);
   }
   render() {
     return (
@@ -27,7 +27,7 @@ class App extends Component {
         <Nav />
         <Form addBooks = {this.addBooks}/>
         {this.state.books.map(
-          (book, index) => <List save={this.saveBook} key={index}>{book.volumeInfo.title}</List>
+          (book, index) => <List save={() => this.saveBook(index)} key={index}>{book.volumeInfo.title}</List>
         )}
       </div>
     );
