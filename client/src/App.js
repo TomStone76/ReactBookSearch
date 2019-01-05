@@ -19,7 +19,7 @@ class App extends Component {
   }
   saveBook = id => {
     console.log(id);
-    this.state.books[id]
+    // this.state.books[id]
   }
   render() {
     return (
