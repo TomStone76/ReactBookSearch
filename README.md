@@ -1,0 +1,1 @@
+This is a book search engine built in React.js. It implements the Google Books API to help users develop a reading list.
